@@ -10,8 +10,11 @@ this should create venv environnement and download the package as well as alread
 
 
 if not, you can:
+
   enter the venv environnement by typing:  source /myenv/bin/activate
+  
   exit the venv environement by typing: deactivate
+  
   Download the package in requirements.txt again by running when in venv environment: pip3 install -r requirements.txt
 
 
