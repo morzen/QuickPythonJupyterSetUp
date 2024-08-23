@@ -1,0 +1,2 @@
+# QuitPythonJupyterSetUp
+also quit venv
