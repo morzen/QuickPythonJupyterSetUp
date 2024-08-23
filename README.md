@@ -1,27 +1,25 @@
 # QuickPythonJupyterSetUp
 
-Alright if you already know which python package you need copy paste them in requirements.txt
+Alright if you already know which python package you need copy paste them in requirements.txt then run:
 
-then run 
-
-source ./venv.sh
+    source ./venv.sh
 
 this should create venv environnement and download the package as well as already putting you in a venv environment
 
 
 if not, you can:
 
-  enter the venv environnement by typing:  source /myenv/bin/activate
+    enter the venv environnement by typing:  source /myenv/bin/activate
   
-  exit the venv environement by typing: deactivate
+    exit the venv environement by typing: deactivate
   
-  Download the package in requirements.txt again by running when in venv environment: pip3 install -r requirements.txt
+    Download the package in requirements.txt again by running when in venv environment: pip3 install -r requirements.txt
 
 
 
 Once this is down, you can start a jupyter lab by running.
 
-bash jupiterInstall.sh
+    bash jupiterInstall.sh
 
 enter the password you wish
 
