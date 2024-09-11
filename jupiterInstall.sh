@@ -1,5 +1,8 @@
 #!/bin/bash
 
+sudo apt install jupyter
+pip install jupyterlab
+
 which jupyter
 jupyter --version
 
