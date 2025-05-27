@@ -20,16 +20,6 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
         virtualenv --python $PYTHON_VERSION $VENV_NAME
     fi
 
-    # Check if requirements.txt exists, if not create it
-    if [ ! -f "requirements.txt" ]; then
-        echo "Creating requirements.txt"
-        touch requirements.txt
-    else
-        # Install requirements
-        echo "Installing requirements"
-        $VENV_NAME/bin/pip3 install -r requirements.txt
-    fi
-
     # Activate the virtual environment
     echo "Activating virtual environment $VENV_NAME"
 
@@ -100,3 +90,15 @@ else
     exit 1
 fi
 
+
+
+
+# Check if requirements.txt exists, if not create it
+if [ ! -f "requirements.txt" ]; then
+    echo "Creating requirements.txt"
+    touch requirements.txt
+else
+    # Install requirements
+    echo "Installing requirements"
+    $VENV_NAME/bin/pip3 install -r requirements.txt
+fi
